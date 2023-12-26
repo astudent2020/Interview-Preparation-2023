@@ -24,8 +24,9 @@
                 //
                 let _this = this;
                 return {
-                    next: function () {
-                        if (index < _this.stus.length) {
+                    next: () => {
+                        if (index < this.stus.length) {
+                            console.log(this);
                             const result = { value: _this.stus[index], done: false };
                             //下标自增
                             index++;

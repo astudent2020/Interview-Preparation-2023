@@ -9,20 +9,34 @@
     <script>
         //声明一个数组
         const xiyou = ['唐僧','孙悟空','猪八戒','沙僧'];
-
+        //console.log(xiyou);
         //使用 for...of 遍历数组
         // for(let v of xiyou){
         //     console.log(v);
         // }
+        // for(let v in xiyou){
+        //     console.log(v);
+        // }
 
+
+        // const xiyous = {'1': '唐僧', '2': '孙悟空', '3': '猪八戒', '4': '沙僧'};
+        // // 使用 for...in 遍历对象的键值对
+        // for (let key in xiyous) {
+        //     console.log(`键名: ${key}, 值: ${xiyous[key]}`);
+        // }
+        //这是调用  return Array Iterator{}
         let iterator = xiyou[Symbol.iterator]();
+        console.log(iterator);
+        //这是一个方法 return function values()
+        let iterator2 = xiyou[Symbol.iterator];
+        console.log(iterator2);
 
-        //调用对象的next方法
-        console.log(iterator.next());
-        console.log(iterator.next());
-        console.log(iterator.next());
-        console.log(iterator.next());
-        console.log(iterator.next());
+        // //调用对象的next方法
+        // console.log(iterator.next());
+        // console.log(iterator.next());
+        // console.log(iterator.next());
+        // console.log(iterator.next());
+        // console.log(iterator.next());
     </script>
 </body>
 </html>
