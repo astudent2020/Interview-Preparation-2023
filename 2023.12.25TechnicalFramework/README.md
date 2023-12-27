@@ -293,6 +293,25 @@ node  fs ajax  MongoDB
 
 ### 7、promise
 
+![image-20231226201133857](https://daetz-image.oss-cn-hangzhou.aliyuncs.com/img/202312262011951.png)
+
+
+
+### 8、ajax
+
+![image-20231226201637223](https://daetz-image.oss-cn-hangzhou.aliyuncs.com/img/202312262016283.png)
+
+`(err, data)` 是一个回调函数的参数列表。在这个具体的例子中，这个回调函数是用于处理文件读取操作的结果的。
+
+- **`err`：** 代表可能发生的错误。如果文件读取操作成功，`err` 将为 `null` 或 `undefined`。如果发生错误，`err` 将包含描述错误的对象。检查 `err` 的值是一种通用的错误处理方式，以确定异步操作是否成功。
+- **`data`：** 代表从文件中读取到的数据。如果文件读取操作成功，`data` 将包含文件的内容。如果发生错误，`data` 可能为 `undefined` 或包含错误相关的信息。
+
+在 Node.js 中的文件读取操作中，通常约定回调函数的第一个参数是错误信息（`err`），而第二个参数是成功时的数据（`data`）。这是一个常见的 Node.js 回调函数的惯例。
+
+
+
+### 9、node.js
+
 
 
 

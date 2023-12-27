@@ -13,14 +13,16 @@ const fs = require('fs');
 const p = new Promise(function(resolve, reject){
     fs.readFile("./resources/为学.mda", (err, data)=>{
         //判断如果失败
+        //err为 null, 则没有错误,否则就是错误对象
+        //data是读取到的数据
         if(err) reject(err);
-        //如果成功
+        //使用reject改变Promise（p）状态为失败状态
         resolve(data);
     });
 });
 
-p.then(function(value){
-    console.log(value.toString());
-}, function(reason){
-    console.log("读取失败!!");
-});
+// p.then(function(value){
+//     console.log(value.toString());
+// }, function(reason){
+//     console.log("读取失败!!");
+// });
