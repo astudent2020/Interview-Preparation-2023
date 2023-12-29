@@ -20,7 +20,8 @@
 		},
 		methods: {
 			showDOM(){
-				console.log(this.$refs.title) //真实DOM元素
+				console.log(this.$r
+				efs.title) //真实DOM元素
 				console.log(this.$refs.btn) //真实DOM元素
 				console.log(this.$refs.sch) //School组件的实例对象（vc）
 			}
