@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+    /* Flex容器样式 */
+    .flex-container {
+      display: flex;
+      justify-content: space-around; /* 主轴上的对齐方式 */
+      align-items: center; /* 交叉轴上的对齐方式 */
+      height: 100vh; /* 设置高度为视口高度 */
+      background-color: #f0f0f0;
+    }
+
+    /* Flex项样式 */
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      margin: 10px;
+      line-height: 100px;
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Flex容器 -->
+  <div class="flex-container">
+    <!-- Flex项 1 -->
+    <div class="flex-item">1</div>
+    <!-- Flex项 2 -->
+    <div class="flex-item">2</div>
+    <!-- Flex项 3 -->
+    <div class="flex-item">3</div>
+  </div>
+</body>
+</html>
+
+/*在这个例子中.flex-container类表示一个Flex容器，.flex-item 类表示Flex容器中的每个项目。
+Flex容器通过display: flex;样式进行定义，而每个Flex项则根据需要添加样式。在这个例子中，Flex
+容器的主轴（水平轴）上的对齐方式为justify-content: space-around;，表示项目之间留有空白，并
+且两端的空白距离是中间空白的一半。交叉轴（垂直轴）上的对齐方式为align-items: center;，表示
+项目在垂直方向上居中对齐。*/

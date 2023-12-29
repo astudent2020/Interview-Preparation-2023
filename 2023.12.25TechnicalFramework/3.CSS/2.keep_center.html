@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centering Examples</title>
+  <style>
+    /* 文本居中（水平和垂直） */
+    /*text-align 相对于行内元素才有效果*/
+    .center-text {
+      text-align: center; /* 水平居中 */
+      line-height: 100vh; /* 垂直居中 */
+      border: 1px solid #ccc; /* 为了演示效果添加边框 */
+    }
+
+    /* 块级元素居中 */
+    .center-block {
+      width: 50%; /* 可根据需要调整宽度 */
+      margin: 0 auto; /* 左右自动居中 */
+      text-align: center; /* 内部文本水平居中 */
+      padding: 20px; /* 为了演示效果添加内边距 */
+      border: 1px solid #ccc; /* 为了演示效果添加边框 */
+    }
+
+    /* Flex 居中 */
+    .flex-container {
+      display: flex;
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      height: 100vh; /* 可根据需要调整高度 */
+      border: 1px solid #ccc; /* 为了演示效果添加边框 */
+    }
+
+    /* Grid 居中 */
+    .grid-container {
+      display: grid;
+      place-items: center; /* 居中 */
+      height: 100vh; /* 可根据需要调整高度 */
+      border: 1px solid #ccc; /* 为了演示效果添加边框 */
+    }
+  </style>
+</head>
+<body>
+  <!-- 文本居中 -->
+  <div class="center-text">
+    <p>This text is centered.</p>
+  </div>
+
+  <!-- 块级元素居中 -->
+  <div class="center-block">
+    <p>This block is centered.</p>
+  </div>
+
+  <!-- Flex 居中 -->
+  <div class="flex-container">
+    <p>This content is centered using Flexbox.</p>
+  </div>
+
+  <!-- Grid 居中 -->
+  <div class="grid-container">
+    <p>This content is centered using CSS Grid.</p>
+  </div>
+</body>
+</html>
